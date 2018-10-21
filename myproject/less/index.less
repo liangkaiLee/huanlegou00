@@ -1,0 +1,128 @@
+@baseColor: hotpink;
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body, .mui-content{
+  background-color: #eee;
+}
+
+//头部标题栏
+.my-header{
+  background-color: @baseColor;
+  > h1{
+    color: #fff;
+  }
+  > .mui-icon-search{
+    color: #fff;
+  }
+}
+
+//综合导航栏
+.my-footer{
+  background-color: @baseColor;
+   > .mui-tab-item{
+    color: #fff;
+     > .mui-active{
+       color: red;
+     }
+  }
+}
+
+//导航区
+.nav-links{
+  padding: 10px;
+  //overflow: hidden;
+  > a{
+    float: left;
+    width: 33.33%;
+    img{
+      width: 100%;
+      //vertical-align: top;
+      display: block;
+    }
+  }
+}
+
+//品牌区
+.brand{
+  padding: 0 10px;
+  > .tittle{
+    width: 100%;
+  }
+  > ul{
+     padding: 10px 0;
+     overflow: hidden;
+    > li{
+       float: left;
+       width: 25%;
+      > a{
+         display: block;
+        > img{
+           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//运动生活区
+.product{
+  padding: 0 10px;
+  //overflow: hidden;
+  > .tittle{
+    width: 100%;
+  }
+  > ul{
+    padding: 6px 0;
+    > li{
+      float: left;
+      width: 50%;
+      padding: 5px;
+      > a{
+        display: block;
+        box-shadow: 0 0 5px #ccc;
+        padding: 5px;
+      }
+        img{
+        width: 100%;
+      }
+       .name{
+        display: block;
+        color: #8f8f94;
+        font-size: 14px;
+        text-align: center;
+        line-height: 18px;
+        height: 38px;
+        overflow: hidden;
+        padding: 5px;
+      }
+      p{
+        text-align: center;
+        padding-top:6px;
+        span:first-child{
+          color: #f20;
+          padding-right: 2px;
+        }
+        span:last-child{
+          text-decoration: line-through;
+          padding-left: 2px;
+        }
+      }
+      .buy-now{
+        display: block;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: lightcoral;
+        color: #FFF;
+        font-size: 14px;
+        border-radius: 4px;
+        margin: 0 auto 5px auto;
+      }
+    }
+  }
+}
